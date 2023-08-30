@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Raleway:wght@300&family=Roboto+Mono:wght@200;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    max-width: 100vw;
+    max-height: 100vh;
+    border: 1px solid black;
+    
+}
+#navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #be3144;
+    border: 2px solid rgba(220, 108, 108, 0.555);
+    position: fixed;
+}
+#navbar ul{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 50px;
+}
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.8rem; 
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Mono', monospace;;
+    font-weight: 300;
+    cursor: pointer;
+}
+#navbar ul li a:hover{
+    background-color: #c1929959;
+
+}
+/* above is the nav bar */
+
+/* below is the welcome section or the about area */
+
+#welcome-section{
+    width: 100%;
+    height: 600px;
+    background-color: #252628;
+    text-align: center;
+    padding: 250px;   
+}
+.greeting{
+    font-size: 4rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#welcome-section, h3{
+    color: #be3144;
+    font-family: 'Inconsolata', monospace;
+    font-size: 2rem;
+}
+
+/* project area */
+
+#projects{
+    background-color: #45567d;
+    padding: 70px;
+    text-align: center;
+}
+#projects h1{
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+}
+.project-container{
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project-tile{
+    height: 400px;
+    width: 350px;
+    margin-top: 50px;
+}
+.project-tile:hover{
+    aspect-ratio: 1.2rem;
+}
+.pic{
+    width: 100%;
+    height: 80%;
+}
+.project-tile h4{
+    background-color: rgba(53, 36, 36, 0.37);
+    height: 70px;
+    line-height: 70px;
+    font-family: 'Inconsolata', monospace;
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+
+
+/* contact area */
+
+.contact{
+    height: 200px;
+    text-align: center;
+    background-color: #303841;
+    padding: 30px;
+}
+.contact h2{
+    color: whitesmoke;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+
+}
+.contact ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+.contact ul li{
+    list-style: none;
+}
+.contact ul li a{
+    color: whitesmoke;
+    font-size: 40px;
+    text-decoration: none;
+
+}
+@media(max-width:500px){
+    #navbar ul{
+        gap: 10px;
+    }
+    #navbar ul li{
+        font-size: 1.3rem; 
+    }
+    #welcome-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;   
+    }
+    .greeting{
+        font-size: 2rem;
+    }
+    #welcome-section, h3{
+        font-size: 1.5rem;
+    }
+    .contact h2{
+        font-size: 2rem;
+    }
+    .contact ul li a{
+        font-size: 30px;
+    }
+}
